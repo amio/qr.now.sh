@@ -1,0 +1,17 @@
+{
+  "name": "qr",
+  "version": "1.0.0",
+  "description": "Generate QR",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro index.js",
+    "predeploy": "now -T qr rm qr --safe",
+    "deploy": "now -T qr && now -T qr alias"
+  },
+  "author": "Amio <amio.cn@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "micro": "^9.3.2",
+    "qr-encoder": "^1.1.1"
+  }
+}
